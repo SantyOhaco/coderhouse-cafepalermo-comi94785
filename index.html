@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body class="pagina-inicio">
+
+    <header>
+        <div class="tituloheader">
+            <h1> Cafeteria Coderhouse </h1>
+            <p> - El cafe por default para los DEV </p>
+        </div>
+                <nav class="navbar navbar-expand-lg listadopaginas w-100 p-0">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Menu</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link" href="pages/cafes.html">Cafes</a>
+                                <a class="nav-link" href="pages/pasteleria.html">Pasteleria</a>
+                                <a class="nav-link" href="pages/desayunos-completos.html">Desayunos</a>
+                                <a class="nav-link" href="pages/bebidas.html">Bebidas</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+    </header>
+
+    <main>
+        <div class="quienessomos">
+            <section>
+                <h2>Quienes somos?</h2>
+                    <article>
+                        <p>Bienvenidos a Cafeteria Coderhouse, el epicentro de productividad diseñado por y para la comunidad
+                            tech en el corazón de Palermo. Combinamos el aroma de un café de especialidad premium con un espacio
+                            de coworking optimizado de alta fidelidad: conectividad simétrica ultrarrápida, mesas con
+                            tomacorrientes e instalaciones ergonómicas pensadas para largas jornadas de código y diseño. Aquí no
+                            solo encontrás el combustible ideal para tus mañanas, sino también una atmósfera silenciosa, libre
+                            de distracciones y rodeada de nómadas digitales, programadores y creativos que comparten tu mismo
+                            ritmo de trabajo.</p>
+                    </article>
+                <p><span>* Sujeto a disponibilidad de espacio - reserva tu lugar llenando nuestro formulario</span></p>
+            </section>
+        </div>
+
+        <div class="mapa">
+            <section>
+                <article>
+                        <h2>Mapa</h2>
+                            <figure>
+                                <img src="image/mapa.png" alt="Mapa que muestra la ubicacion de nuestro local">
+                                <figcaption>Ubicacion del local por mapa</figcaption>
+                            </figure>
+                </article>
+            </section>
+        </div>
+        <div class="form">
+            <section>
+                <h3 class="reservas">RESERVAS</h3>
+                    <form>
+                        <div>
+                            <fieldset>
+                                <legend>Nombre y Apellido</legend>
+                                    <label for="form_name">Nombre</label>
+                                        <input type="text" id="form_name" placeholder="Escriba su Nombre" required>
+                                    <label for="form_apellido">Apellido</label>
+                                        <input type="text" id="form_apellido" placeholder="Escriba su Apellido" required>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Dia y Horario</legend>
+                                    <label for="form_dia">Dia</label>
+                                        <input type="date" id="form_dia" required>
+                                    <label for="form_entrada">Horario de entrada</label>
+                                        <input type="time" id="form_entrada" required>
+                                    <label for="Form_horas">Horas</label>
+                                        <input type="number" id="Form_horas" placeholder="Cant Hs estimadas" required>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Correo y Password</legend>
+                                    <label for="form_correo">Correo</label>
+                                        <input type="email" id="form_correo" placeholder="Ingrese su mail" required>
+                                    <label for="form_password">Password</label>
+                                        <input type="password" id="form_password" placeholder="Ingrese Password" required>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Comentario (Opcional)</legend>
+                                    <textarea name="" id=""></textarea>
+                            </fieldset>
+                            <input type="submit">
+                        </div>
+                    </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            
+            <div class="contenedor-datoslocal">
+                <h3>Datos del local</h3>
+                    <ul>
+                        <li>Telefono: (939) 555-0113</li>
+                        <li>Direccion: Avenida Siempreviva 742</li>
+                        <li>Horario de atencion: Lun a Sab de 10AM a 24PM</li>
+                        <li>Pedidos solo disponobles para takeaway</li>
+                    </ul>
+            </div>
+            <div class="contenedor-redessociales">
+                <h3>Redes Sociales</h3>
+                    <ul>
+                        <li><a href="www.facebook.com" target="_blank">Faceboock</a></li>
+                        <li><a href="www.instagram.com" target="_blank">Instagram</a></li>
+                    </ul>
+            </div>
+            <div class="copyright">
+                <span>Copyright 2026</span>
+                <span class="separador">  -  </span> 
+                <span>Santiago Ohaco Maldonado</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
