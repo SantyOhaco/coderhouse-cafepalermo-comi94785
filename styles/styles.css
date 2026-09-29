@@ -272,6 +272,11 @@ text-se
     box-shadow: 0 0 0 3px rgba(235, 166, 208, 0.4) !important;
 }
 
+.bebidas article:hover{
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(235, 166, 208, 0.4) !important;
+}
+
 .carousel-item article {
     background-color: #f9f9f9;
     padding: 20px;
