@@ -110,6 +110,7 @@ h1, h2, h3, .product {
     padding: 5px;
 }
 
+
 span {
     color:rgba(120, 113, 113, 0.913);
 }
@@ -246,8 +247,7 @@ text-se
     padding: 20px;
 }
 
-.cafes article, .pasteleria article, 
-.desayunos article, .bebidas article {
+.cafes article, .pasteleria article, .bebidas article {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
@@ -256,6 +256,16 @@ text-se
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.pasteleria article:hover{
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(235, 166, 208, 0.4) !important;
+}
+
+.cafes article:hover{
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(235, 166, 208, 0.4) !important;
 }
 
 .carousel-item article {
