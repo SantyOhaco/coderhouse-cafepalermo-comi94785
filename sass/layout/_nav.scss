@@ -1,0 +1,40 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.listadopaginas {
+    width: 100%;
+    @include caja(center, center, row);
+    margin-bottom: 0 !important;
+
+    nav {
+        @include caja(flex-start, center, column);
+        gap: 10px;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+
+    .nav-link {
+        &:hover {
+            color: $color-marca-destacado !important;
+            background-color: $color-bg-destacado-transparente !important;
+            box-shadow: 0 0 12px $color-sombra-destacado !important;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        &:focus {
+            color: $color-marca-destacado !important;
+            background-color: $color-bg-destacado-transparente !important;
+            box-shadow: 0 0 12px $color-sombra-enfoque !important;
+            border-radius: 4px;
+            outline: none !important;
+        }
+
+        &:active {
+            color: $color-link-activo !important;
+        }
+    }
+}

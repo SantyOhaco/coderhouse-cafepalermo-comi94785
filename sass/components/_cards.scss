@@ -1,0 +1,297 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+.quienessomos {
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        grid-area: quienes;
+    }
+
+    section {
+        @include caja(flex-start, normal, column);
+        gap: 10px;
+
+        article p {
+            font-weight: 700 !important;
+            border: 2px solid $color-texto-secundario !important;
+            text-align: justify !important;
+            padding: 15px !important;
+            background-color: transparent !important;
+
+            &::first-letter {
+                font-size: 1.5rem;
+                text-shadow: 3px 0px 3px grey;
+            }
+        }
+    }
+}
+
+.mapa {
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        grid-area: mapalocal;
+    }
+
+    article,
+    figure {
+        @include caja(center, center, column);
+        text-align: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+
+        &:hover {
+            @include efecto-enfoque-tarjeta;
+        }
+    }
+}
+
+.form {
+    @media (min-width: 1024px) {
+        grid-area: formulario;
+    }
+
+    h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    section {
+        @include caja(center, center, column);
+        width: 100%;
+        gap: 15px;
+    }
+
+    form,
+    form>div {
+        @include caja(flex-start, normal, column);
+        gap: 10px;
+        width: 100%;
+    }
+
+    fieldset {
+        @include caja(flex-start, normal, column);
+        gap: 10px;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid $color-borde-divisor;
+        border-radius: 8px;
+    }
+
+    input[type="submit"] {
+        align-self: center;
+        width: auto;
+        padding: 5px 10px;
+    }
+
+    input:active {
+        background-color: $color-boton-exito;
+        color: whitesmoke;
+    }
+}
+
+
+.cafes,
+.pasteleria,
+.desayunos-carousel-container,
+.bebidas {
+    width: 100%;
+    min-width: 320px;
+    box-sizing: border-box;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    article {
+        background-color: $color-bg-tarjeta;
+        padding: 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        width: 100% !important;
+        @include caja(flex-start, normal, column);
+        gap: 15px;
+
+        &:hover {
+            @include efecto-enfoque-tarjeta;
+        }
+    }
+}
+
+.cafes,
+.pasteleria {
+    @media (min-width: 1024px) {
+        grid-area: unset !important;
+
+        section {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 30px !important;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.carousel-item {
+    article {
+        background-color: $color-bg-tarjeta;
+        padding: 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        width: 100% !important;
+        @include caja(space-between, normal, column);
+        gap: 15px;
+        height: 650px !important;
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+    }
+}
+
+.cafes,
+.pasteleria,
+.desayunos-carousel-container {
+
+    h3,
+    article p,
+    .product {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    article p {
+        border: none !important;
+        font-weight: 400;
+        padding: 10px 5px;
+    }
+
+    .descripcion-cafe,
+    .descripcion-pasteleria,
+    .descripcion-desayunos {
+        width: 100% !important;
+        min-height: 120px;
+        @include caja(center, center, row);
+        text-align: center;
+        padding: 10px 0px !important;
+        margin: 0 !important;
+        border: none !important;
+    }
+
+    figure {
+        width: 100%;
+        margin: 0px !important;
+        padding: 0px;
+        @include caja(flex-start, normal, column);
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+    }
+}
+
+.desayunos section article:nth-child(3) {
+    @media (min-width: 1024px) {
+        grid-column: span 2 !important;
+    }
+}
+
+.bebidas .descripcion-bebidas {
+    list-style-position: inside;
+    @include caja(flex-start, normal, column);
+}
+
+.bebidas-grid {
+    @media (min-width: 1024px) {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 30px !important;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .bebidas {
+        width: 100%;
+
+        section {
+            @media (min-width: 1024px) {
+                padding: 0px !important;
+                width: 100% !important;
+            }
+        }
+
+        article {
+            @media (min-width: 1024px) {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+.desayunos-carousel-container {
+    margin: 20px auto;
+    padding: 0 15px;
+
+    .descripcion-desayunos {
+        min-height: 80px;
+        margin-bottom: 15px;
+    }
+
+    .carousel-control-prev:focus,
+    .carousel-control-next:focus {
+        outline: none !important;
+        background-color: hsla(318, 29%, 51%, 0.228) !important;
+        border-radius: 50%;
+    }
+
+    .carousel-indicators button:focus {
+        outline: none !important;
+        box-shadow: 0 0 0 3px $color-sombra-borde-tarjeta !important;
+    }
+
+    @media (min-width: 1024px) {
+        max-width: 900px !important;
+        margin: 40px auto;
+    }
+}
+
+.image-carousel-custom {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}

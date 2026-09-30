@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+header {
+    background-color: $color-bg-sitio;
+    padding: 20px 30px;
+    border-bottom: 1px solid $color-borde-divisor;
+    width: 100%;
+    gap: 15px;
+    @include caja(center, center, column); 
+
+    @media (min-width: 1024px) {
+        padding: 20px 40px;
+        @include caja(space-between, center, row); 
+    }
+}
+
+.tituloheader {
+    @include caja(center, center, column);
+    width: 100%;
+    text-align: center;
+
+    h1 {
+        border-radius: 12px;
+        padding: 6px 15px;
+        display: inline-block;
+
+        &::before {
+            content: "☕️";
+            font-size: 50px;
+            text-shadow: 8px 8px 8px rgb(73, 61, 61);
+            display: inline-block;
+        }
+    }
+}

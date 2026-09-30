@@ -1,0 +1,34 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+h1,
+h2,
+h3,
+p,
+a,
+.product,
+.bebidas {
+    font-family: $fuente-principal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+.product {
+    font-weight: 400;
+    color: $color-texto-principal;
+    background-color: $color-bg-sitio;
+    padding: 5px;
+}
+
+h1,
+.reservas {
+    text-decoration: underline;
+}
+
+h2,
+.product,
+.bebidas {
+    text-align: center;
+}
