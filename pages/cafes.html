@@ -8,136 +8,155 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body class="pagina-catalogo">
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
     <header>
-         <div class="tituloheader">
-            <h1> Cafe de especialidad </h1>
+        <div class="tituloheader">
+            <h1 class="animate__animated animate__rubberBand"> Cafe de especialidad </h1>
             <p> - El cafe por default para los DEV </p>
         </div>
-                <nav class="navbar navbar-expand-lg listadopaginas w-100 p-0">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Menu</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                                <a class="nav-link" href="#">Cafes</a>
-                                <a class="nav-link" href="pasteleria.html">Pasteleria</a>
-                                <a class="nav-link" href="desayunos-completos.html">Desayunos</a>
-                                <a class="nav-link" href="bebidas.html">Bebidas</a>
-                            </div>
-                        </div>
+        <nav class="navbar navbar-expand-lg listadopaginas w-100 p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="#">Cafes</a>
+                        <a class="nav-link" href="pasteleria.html">Pasteleria</a>
+                        <a class="nav-link" href="desayunos-completos.html">Desayunos</a>
+                        <a class="nav-link" href="bebidas.html">Bebidas</a>
                     </div>
-                </nav>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <div class="quienessomos">
             <section>
                 <h2>Porque elegir nuestros cafes?</h2>
-                    <article>
-                        <p>En Cafe Coderhouse, entendemos que el café no es solo una bebida, sino el combustible esencial que
-                            impulsa tu lógica y creatividad. Por eso, seleccionamos granos de especialidad con tostado local y
-                            alta concentración de pureza, diseñados para mantener tu enfoque al máximo sin los picos de ansiedad
-                            del café comercial. Cada taza es calibrada con precisión por baristas profesionales para garantizar
-                            el balance perfecto entre sabor y cafeína, ofreciéndote la energía limpia y duradera que necesitás
-                            para superar cada sprint, resolver esebug complejo o brillar en tu próxima videollamada.</p>
-                    </article>
+                <article>
+                    <p>En Cafe Coderhouse, entendemos que el café no es solo una bebida, sino el combustible esencial
+                        que
+                        impulsa tu lógica y creatividad. Por eso, seleccionamos granos de especialidad con tostado local
+                        y
+                        alta concentración de pureza, diseñados para mantener tu enfoque al máximo sin los picos de
+                        ansiedad
+                        del café comercial. Cada taza es calibrada con precisión por baristas profesionales para
+                        garantizar
+                        el balance perfecto entre sabor y cafeína, ofreciéndote la energía limpia y duradera que
+                        necesitás
+                        para superar cada sprint, resolver esebug complejo o brillar en tu próxima videollamada.</p>
+                </article>
             </section>
         </div>
         <div class="cafes">
             <h2>Nuestros Cafes</h2>
-                <section>
-                        <article>
-                            <h3>Root Espresso</h3>
-                            <p class="descripcion-cafes">Un shot simple de espresso puro y concentrado. La base de todo nuestro sistema de bebidas.</p>
-                                <figure>
-                                    <img src="../image/expresso.jpeg" alt="Foto de un cafe Expresso">
-                                    <figcaption class="product">Cafe Expresso</figcaption>
-                                </figure>
-                            <p>Precio por unidad $5000</p>
-                        </article>
-                        <article>
-                            <h3>Double Stack</h3>
-                            <p class="descripcion-cafes">Café doble tradicional, intenso y con cuerpo. Doble carga de energía para duplicar tu rendimiento.</p>
-                                <figure>
-                                    <img src="../image/cafedoble.jpeg" alt="Foto de un cafe doble tradional">
-                                    <figcaption class="product">Cafe Doble</figcaption>
-                                </figure>
-                            <p>Precio por unidad $7000</p>
-                        </article>
-                        <article>
-                            <h3>Flat White .config</h3>
-                            <p class="descripcion-cafes">El clásico Flat White: dos shots de espresso con una capa fina de leche al vapor. Perfectamente equilibrado y configurado para programar sin pausas.</p>
-                                <figure>
-                                    <img src="../image/flatwhite.jpeg" alt="Foto de un cafe con leche, con mas leche que cafe">
-                                    <figcaption class="product">Flat White</figcaption>
-                                </figure>
-                            <p>Precio por unidad $7000</p>
-                        </article>
-                        <article>
-                            <h3>Cloud Cappuccino</h3>
-                            <p class="descripcion-cafes">Cappuccino tradicional con espresso, leche y una densa nube de espuma espolvoreada con cacao. Ideal para los que trabajan con la mente en la nube.</p>
-                                <figure>
-                                    <img src="../image/cappuchino.jpeg" alt="Foto de un cafe capucchino">
-                                    <figcaption class="product">Capucchino</figcaption>
-                                </figure>
-                            <p>Precio por unidad $9000</p>
-                        </article>
-                        <article>
-                            <h3>Latte Script</h3>
-                            <p class="descripcion-cafes">Café latte clásico, suave y ligero, servido en vaso largo. Código limpio, fluido y fácil de digerir para arrancar la mañana.</p>
-                                <Figure>
-                                    <img src="../image/late.jpeg" alt="Foto de un cafe con leche comun">
-                                    <figcaption class="product">Late</figcaption>
-                                </Figure>
-                            <p>Precio por unidad $6000</p>
-                        </article>
-                        <article>
-                            <h3>Cold Brew Overclock</h3>
-                            <p class="descripcion-cafes">Café extraído en frío de forma lenta durante 18 horas, servido con hielo. Máxima cafeína y frescura para llevar tu productividad al siguiente nivel.</p>
-                                <figure>
-                                    <img src="../image/cafefrio.jpeg" alt="Foto de un cafe frio">
-                                    <figcaption class="product">Cafe Frio</figcaption>
-                                </figure>
-                            <p>Precio por unidad $9000</p>
-                        </article>
-                </section>
+            <section>
+                <article class="card-producto">
+                    <h3>Root Espresso</h3>
+                    <p class="descripcion-cafes">Un shot simple de espresso puro y concentrado. La base de todo nuestro
+                        sistema de bebidas.</p>
+                    <figure>
+                        <img src="../image/expresso.jpeg" alt="Foto de un cafe Expresso">
+                        <figcaption class="product">Cafe Expresso</figcaption>
+                    </figure>
+                    <p>Precio por unidad $5000</p>
+                </article>
+                <article class="card-producto">
+                    <h3>Double Stack</h3>
+                    <p class="descripcion-cafes">Café doble tradicional, intenso y con cuerpo. Doble carga de energía
+                        para duplicar tu rendimiento.</p>
+                    <figure>
+                        <img src="../image/cafedoble.jpeg" alt="Foto de un cafe doble tradional">
+                        <figcaption class="product">Cafe Doble</figcaption>
+                    </figure>
+                    <p>Precio por unidad $7000</p>
+                </article>
+                <article class="card-producto">
+                    <h3>Flat White .config</h3>
+                    <p class="descripcion-cafes">El clásico Flat White: dos shots de espresso con una capa fina de leche
+                        al vapor. Perfectamente equilibrado y configurado para programar sin pausas.</p>
+                    <figure>
+                        <img src="../image/flatwhite.jpeg" alt="Foto de un cafe con leche, con mas leche que cafe">
+                        <figcaption class="product">Flat White</figcaption>
+                    </figure>
+                    <p>Precio por unidad $7000</p>
+                </article>
+                <article class="card-producto">
+                    <h3>Cloud Cappuccino</h3>
+                    <p class="descripcion-cafes">Cappuccino tradicional con espresso, leche y una densa nube de espuma
+                        espolvoreada con cacao. Ideal para los que trabajan con la mente en la nube.</p>
+                    <figure>
+                        <img src="../image/cappuchino.jpeg" alt="Foto de un cafe capucchino">
+                        <figcaption class="product">Capucchino</figcaption>
+                    </figure>
+                    <p>Precio por unidad $9000</p>
+                </article>
+                <article class="card-producto">
+                    <h3>Latte Script</h3>
+                    <p class="descripcion-cafes">Café latte clásico, suave y ligero, servido en vaso largo. Código
+                        limpio, fluido y fácil de digerir para arrancar la mañana.</p>
+                    <Figure>
+                        <img src="../image/late.jpeg" alt="Foto de un cafe con leche comun">
+                        <figcaption class="product">Late</figcaption>
+                    </Figure>
+                    <p>Precio por unidad $6000</p>
+                </article>
+                <article class="card-producto">
+                    <h3>Cold Brew Overclock</h3>
+                    <p class="descripcion-cafes">Café extraído en frío de forma lenta durante 18 horas, servido con
+                        hielo. Máxima cafeína y frescura para llevar tu productividad al siguiente nivel.</p>
+                    <figure>
+                        <img src="../image/cafefrio.jpeg" alt="Foto de un cafe frio">
+                        <figcaption class="product">Cafe Frio</figcaption>
+                    </figure>
+                    <p>Precio por unidad $9000</p>
+                </article>
+            </section>
         </div>
     </main>
     <footer>
         <div>
             <div class="contenedor-datoslocal">
                 <h3>Datos del local</h3>
-                    <ul>
-                        <li>Telefono: (939) 555-0113</li>
-                        <li>Direccion: Avenida Siempreviva 742</li>
-                        <li>Horario de atencion: Lun a Sab de 10AM a 24PM</li>
-                        <li>Pedidos solo disponobles para takeaway</li>
-                    </ul>
+                <ul>
+                    <li>Telefono: (939) 555-0113</li>
+                    <li>Direccion: Avenida Siempreviva 742</li>
+                    <li>Horario de atencion: Lun a Sab de 10AM a 24PM</li>
+                    <li>Pedidos solo disponobles para takeaway</li>
+                </ul>
             </div>
             <div class="contenedor-redessociales">
                 <h3>Redes Sociales</h3>
-                    <ul>
-                        <li><a href="www.facebook.com" target="_blank">Faceboock</a></li>
-                        <li><a href="www.instagram.com" target="_blank">Instagram</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="www.facebook.com" target="_blank">Faceboock</a></li>
+                    <li><a href="www.instagram.com" target="_blank">Instagram</a></li>
+                </ul>
             </div>
             <div class="copyright">
                 <span>Copyright 2026</span>
-                <span class="separador">  -  </span> 
+                <span class="separador"> - </span>
                 <span>Santiago Ohaco Maldonado</span>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

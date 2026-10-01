@@ -8,141 +8,159 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../styles/styles.css">
-
 </head>
 
 <body>
-
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
     <header>
         <div class="tituloheader">
-            <h1> Combos - desayunos completos </h1>
+            <h1 class="animate__animated animate__rubberBand"> Combos - desayunos completos </h1>
             <p> - El cafe por default para los DEV </p>
         </div>
-                <nav class="navbar navbar-expand-lg listadopaginas w-100 p-0">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Menu</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                                <a class="nav-link" href="cafes.html">Cafes</a>
-                                <a class="nav-link" href="pasteleria.html">Pasteleria</a>
-                                <a class="nav-link" href="#">Desayunos</a>
-                                <a class="nav-link" href="bebidas.html">Bebidas</a>
-                            </div>
-                        </div>
+        <nav class="navbar navbar-expand-lg listadopaginas w-100 p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="cafes.html">Cafes</a>
+                        <a class="nav-link" href="pasteleria.html">Pasteleria</a>
+                        <a class="nav-link" href="#">Desayunos</a>
+                        <a class="nav-link" href="bebidas.html">Bebidas</a>
                     </div>
-                </nav>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <div class="quienessomos">
             <section>
                 <h2>Porque elegir nuestros Desayunos Completos?</h2>
-                    <article>
-                        <p>Nuestros desayunos completos están estructurados como la arquitectura ideal para arrancar tu jornada
-                            con la máxima potencia operativa. Diseñamos cada propuesta combinando estratégicamente proteínas de
-                            alta calidad, carbohidratos de absorción lenta y grasas saludables que optimizan tus funciones
-                            cognitivas y evitan los baches de fatiga a mitad de la mañana. Al elegir uno de nuestros combos, no
-                            solo te asegurás una comida completa, equilibrada y abundante, sino que también optimizás tu tiempo:
-                            una sola orden te provee del combustible premium y la hidratación necesarios para sostener tus
-                            primeras reuniones del día o tus bloques de enfoque profundo sin interrupciones.</p>
-                    </article>
+                <article>
+                    <p>Nuestros desayunos completos están estructurados como la arquitectura ideal para arrancar tu
+                        jornada
+                        con la máxima potencia operativa. Diseñamos cada propuesta combinando estratégicamente proteínas
+                        de
+                        alta calidad, carbohidratos de absorción lenta y grasas saludables que optimizan tus funciones
+                        cognitivas y evitan los baches de fatiga a mitad de la mañana. Al elegir uno de nuestros combos,
+                        no
+                        solo te asegurás una comida completa, equilibrada y abundante, sino que también optimizás tu
+                        tiempo:
+                        una sola orden te provee del combustible premium y la hidratación necesarios para sostener tus
+                        primeras reuniones del día o tus bloques de enfoque profundo sin interrupciones.</p>
+                </article>
             </section>
         </div>
 
         <div class="desayunos-carousel-container">
             <h2>Nuestros Desayunos</h2>
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <article>
-                                <h3>Sprint Inicial (El Clásico Porteño)</h3>
-                                <p class="descripcion-desayunos">Un café Double Stack o Latte Script, un vaso de jugo de naranja exprimido y dos Croissants de Código Abierto. La configuración básica e indispensable para poner en marcha tu sistema por la mañana.</p>
-                                    <figure>
-                                        <img src="../image/desayuno1.jpeg" alt="Desayuno opcion 1">
-                                        <figcaption class="product">Desayuno opcion 1 </figcaption>
-                                    </figure>
-                                <p>Precio por unidad $25000</p>
-                            </article>
-                        </div>
-                        <div class="carousel-item">
-                            <article>
-                                <h3>Combo Full-Stack (El Más Completo)</h3>
-                                <p class="descripcion-desayunos">Un café Flat White.config, un Avocado Toast.env con huevo poche, un bowl pequeño de yogur natural con granola y frutas de estación, más un shot de jugo verde antioxidante. El ecosistema completo de nutrientes para programadores que enfrentan jornadas intensas de desarrollo.</p>
-                                    <figure>
-                                        <img src="../image/desayuno2.jpeg" alt="Desayuno opcion 2e">
-                                        <figcaption class="product">Desayuno opcion 2</figcaption>
-                                    </figure>
-                                <p>Precio por unidad $30000</p>
-                            </article>
-                        </div>
-                        <div class="carousel-item">
-                            <article>
-                                <h3>Overclock Boost (Para Largas Jornadas)</h3>
-                                <p class="descripcion-desayunos">Un Cold Brew Overclock, un sándwich de jamón crudo, rúcula y queso brie en pan de masa madre, acompañado de un Debug Brownie. Una descarga de cafeína y calorías de alta calidad para hackear el cansancio cuando se acerca la hora de entrega (deadline).</p>
-                                    <figure>
-                                        <img src="../image/desayuno3.jpeg" alt="Desayuno opcion 3">
-                                        <figcaption class="product">Desayuno opcion 3</figcaption>
-                                    </figure>
-                                <p>Precio por unidad $35000</p>
-                            </article>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article>
+                            <h3>Sprint Inicial (El Clásico Porteño)</h3>
+                            <p class="descripcion-desayunos">Un café Double Stack o Latte Script, un vaso de jugo de
+                                naranja exprimido y dos Croissants de Código Abierto. La configuración básica e
+                                indispensable para poner en marcha tu sistema por la mañana.</p>
+                            <figure>
+                                <img src="../image/desayuno1.jpeg" alt="Desayuno opcion 1">
+                                <figcaption class="product">Desayuno opcion 1 </figcaption>
+                            </figure>
+                            <p>Precio por unidad $25000</p>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article>
+                            <h3>Combo Full-Stack (El Más Completo)</h3>
+                            <p class="descripcion-desayunos">Un café Flat White.config, un Avocado Toast.env con huevo
+                                poche, un bowl pequeño de yogur natural con granola y frutas de estación, más un shot de
+                                jugo verde antioxidante. El ecosistema completo de nutrientes para programadores que
+                                enfrentan jornadas intensas de desarrollo.</p>
+                            <figure>
+                                <img src="../image/desayuno2.jpeg" alt="Desayuno opcion 2e">
+                                <figcaption class="product">Desayuno opcion 2</figcaption>
+                            </figure>
+                            <p>Precio por unidad $30000</p>
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article>
+                            <h3>Overclock Boost (Para Largas Jornadas)</h3>
+                            <p class="descripcion-desayunos">Un Cold Brew Overclock, un sándwich de jamón crudo, rúcula
+                                y queso brie en pan de masa madre, acompañado de un Debug Brownie. Una descarga de
+                                cafeína y calorías de alta calidad para hackear el cansancio cuando se acerca la hora de
+                                entrega (deadline).</p>
+                            <figure>
+                                <img src="../image/desayuno3.jpeg" alt="Desayuno opcion 3">
+                                <figcaption class="product">Desayuno opcion 3</figcaption>
+                            </figure>
+                            <p>Precio por unidad $35000</p>
+                        </article>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-    
+
     </main>
 
     <footer>
         <div>
             <div class="contenedor-datoslocal">
                 <h3>Datos del local</h3>
-                    <ul>
-                        <li>Telefono: (939) 555-0113</li>
-                        <li>Direccion: Avenida Siempreviva 742</li>
-                        <li>Horario de atencion: Lun a Sab de 10AM a 24PM</li>
-                        <li>Pedidos solo disponobles para takeaway</li>
-                    </ul>
+                <ul>
+                    <li>Telefono: (939) 555-0113</li>
+                    <li>Direccion: Avenida Siempreviva 742</li>
+                    <li>Horario de atencion: Lun a Sab de 10AM a 24PM</li>
+                    <li>Pedidos solo disponobles para takeaway</li>
+                </ul>
             </div>
             <div class="contenedor-redessociales">
                 <h3>Redes Sociales</h3>
-                    <ul>
-                        <li><a href="www.facebook.com" target="_blank">Faceboock</a></li>
-                        <li><a href="www.instagram.com" target="_blank">Instagram</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="www.facebook.com" target="_blank">Faceboock</a></li>
+                    <li><a href="www.instagram.com" target="_blank">Instagram</a></li>
+                </ul>
             </div>
             <div class="copyright">
                 <span>Copyright 2026</span>
-                <span class="separador">  -  </span> 
+                <span class="separador"> - </span>
                 <span>Santiago Ohaco Maldonado</span>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

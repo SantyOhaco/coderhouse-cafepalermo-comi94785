@@ -8,108 +8,125 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../styles/styles.css">
 
 </head>
 
 <body class="pagina-catalogo">
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
 
     <header>
         <div class="tituloheader">
-            <h1> Pasteleria </h1>
+            <h1 class="animate__animated animate__rubberBand"> Pasteleria </h1>
             <p> - El cafe por default para los DEV </p>
         </div>
-                <nav class="navbar navbar-expand-lg listadopaginas w-100 p-0">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Menu</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                                <a class="nav-link" href="cafes.html">Cafes</a>
-                                <a class="nav-link" href="#">Pasteleria</a>
-                                <a class="nav-link" href="desayunos-completos.html">Desayunos</a>
-                                <a class="nav-link" href="bebidas.html">Bebidas</a>
-                            </div>
-                        </div>
+        <nav class="navbar navbar-expand-lg listadopaginas w-100 p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="cafes.html">Cafes</a>
+                        <a class="nav-link" href="#">Pasteleria</a>
+                        <a class="nav-link" href="desayunos-completos.html">Desayunos</a>
+                        <a class="nav-link" href="bebidas.html">Bebidas</a>
                     </div>
-                </nav>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <div class="quienessomos">
             <section>
                 <h2>Porque elegir nuestra Pasteleria?</h2>
-                    <article>
-                        <p>Nuestra propuesta de pastelería está pensada para ser el soporte perfecto de tu jornada, evitando los
-                            picos de azúcar que sabotean tu concentración. Horneamos cada opción diariamente con ingredientes
-                            reales y técnicas artesanales, ofreciendo desde clásicos reconfortantes hasta alternativas
-                            nutritivas, proteínas y opciones sin TACC diseñadas para darte energía sostenida. Cada bocado está
-                            optimizado para acompañar tu café sin dejar rastros grasosos en tus dedos, garantizando que puedas
-                            disfrutar de un snack premium mientras mantenés tu teclado impecable, tu mente ágil y tu código
-                            fluyendo sin interrupciones.</p>
-                    </article>
+                <article>
+                    <p>Nuestra propuesta de pastelería está pensada para ser el soporte perfecto de tu jornada, evitando
+                        los
+                        picos de azúcar que sabotean tu concentración. Horneamos cada opción diariamente con
+                        ingredientes
+                        reales y técnicas artesanales, ofreciendo desde clásicos reconfortantes hasta alternativas
+                        nutritivas, proteínas y opciones sin TACC diseñadas para darte energía sostenida. Cada bocado
+                        está
+                        optimizado para acompañar tu café sin dejar rastros grasosos en tus dedos, garantizando que
+                        puedas
+                        disfrutar de un snack premium mientras mantenés tu teclado impecable, tu mente ágil y tu código
+                        fluyendo sin interrupciones.</p>
+                </article>
             </section>
         </div>
         <div class="pasteleria">
             <h2>Nuestros Pasteleria</h2>
             <section>
-                <article>
+                <article class="card-pasteleria">
                     <h3>Cookies de Navegación</h3>
-                    <p class="descripcion-pasteleria">Las clásicas galletas americanas con chips de chocolate artesanal. Imposibles de rechazar y necesarias para aceptar el día.</p>
-                        <figure>
-                            <img src="../image/coockie.jpeg" alt="Foto de una Cookie">
-                            <figcaption class="product">Coockie</figcaption>
-                        </figure>
+                    <p class="descripcion-pasteleria">Las clásicas galletas americanas con chips de chocolate artesanal.
+                        Imposibles de rechazar y necesarias para aceptar el día.</p>
+                    <figure>
+                        <img src="../image/coockie.jpeg" alt="Foto de una Cookie">
+                        <figcaption class="product">Coockie</figcaption>
+                    </figure>
                     <p>Precio por unidad $7000</p>
                 </article>
-                <article>
+                <article class="card-pasteleria">
                     <h3>Croissant de Código Abierto (Open Source)</h3>
-                    <p class="descripcion-pasteleria">Medialuna de manteca premium o croissant de estilo francés, aireado y crocante. Libre para rellenar con jamón y queso, dulce de leche o comer sola.</p>
-                        <figure>
-                            <img src="../image/croisantges.jpeg" alt="Foto de un Croissant">
-                            <figcaption class="product">Croissant</figcaption>
-                        </figure>
+                    <p class="descripcion-pasteleria">Medialuna de manteca premium o croissant de estilo francés,
+                        aireado y crocante. Libre para rellenar con jamón y queso, dulce de leche o comer sola.</p>
+                    <figure>
+                        <img src="../image/croisantges.jpeg" alt="Foto de un Croissant">
+                        <figcaption class="product">Croissant</figcaption>
+                    </figure>
                     <p>Precio por unidad $10000</p>
                 </article>
-                <article>
+                <article class="card-pasteleria">
                     <h3>Avocado Toast .env</h3>
-                    <p class="descripcion-pasteleria">Tostón de pan de masa madre con palta pisada, huevo poche y semillas. Tu entorno local configurado con los nutrientes esenciales para arrancar.</p>
-                        <figure>
-                            <img src="../image/avocado.jpeg" alt="Foto de un Avocado Toast">
-                            <figcaption class="product">Avocado</figcaption>
-                        </figure>
+                    <p class="descripcion-pasteleria">Tostón de pan de masa madre con palta pisada, huevo poche y
+                        semillas. Tu entorno local configurado con los nutrientes esenciales para arrancar.</p>
+                    <figure>
+                        <img src="../image/avocado.jpeg" alt="Foto de un Avocado Toast">
+                        <figcaption class="product">Avocado</figcaption>
+                    </figure>
                     <p>Precio por unidad $15000</p>
                 </article>
-                <article>
+                <article class="card-pasteleria">
                     <h3>Muffin de Respaldo (Backup Muffin)</h3>
-                    <p class="descripcion-pasteleria">Muffin esponjoso de vainilla con arándanos o hilos de dulce de leche. La dosis de energía extra que te salva cuando el día se pone complejo.</p>
-                        <figure>
-                            <img src="../image/muffin.jpeg" alt="Foto de un Muffin">
-                            <figcaption class="product">Muffin</figcaption>
-                        </figure>
+                    <p class="descripcion-pasteleria">Muffin esponjoso de vainilla con arándanos o hilos de dulce de
+                        leche. La dosis de energía extra que te salva cuando el día se pone complejo.</p>
+                    <figure>
+                        <img src="../image/muffin.jpeg" alt="Foto de un Muffin">
+                        <figcaption class="product">Muffin</figcaption>
+                    </figure>
                     <p>Precio por unidad $8000</p>
                 </article>
-                <article>
+                <article class="card-pasteleria">
                     <h3>Alfajor Null Pointer</h3>
-                    <p class="descripcion-pasteleria">Alfajor de masa sablée de cacao, relleno de abundante dulce de leche y baño de chocolate. Un clásico argentino que hace desaparecer cualquier error del sistema.</p>
-                        <figure>
-                            <img src="../image/alfajor.jpeg" alt="Foto de un Alfajor">
-                            <figcaption class="product">Alfajor</figcaption>
-                        </figure>
+                    <p class="descripcion-pasteleria">Alfajor de masa sablée de cacao, relleno de abundante dulce de
+                        leche y baño de chocolate. Un clásico argentino que hace desaparecer cualquier error del
+                        sistema.</p>
+                    <figure>
+                        <img src="../image/alfajor.jpeg" alt="Foto de un Alfajor">
+                        <figcaption class="product">Alfajor</figcaption>
+                    </figure>
                     <p>Precio por unidad $6000</p>
                 </article>
-                <article>
+                <article class="card-pasteleria">
                     <h3>Brownie de Depuración (Debug Brownie)</h3>
-                    <p class="descripcion-pasteleria">Cuadrado de brownie de chocolate amargo, húmedo y con nueces crocantes. El bloque dulce ideal para resetear la mente y encontrar la solución a ese bug.</p>
-                        <figure>
-                            <img src="../image/brownie.jpeg" alt="Foto de un Brownie">
-                            <figcaption class="product">Brownie</figcaption>
-                        </figure>
+                    <p class="descripcion-pasteleria">Cuadrado de brownie de chocolate amargo, húmedo y con nueces
+                        crocantes. El bloque dulce ideal para resetear la mente y encontrar la solución a ese bug.</p>
+                    <figure>
+                        <img src="../image/brownie.jpeg" alt="Foto de un Brownie">
+                        <figcaption class="product">Brownie</figcaption>
+                    </figure>
                     <p>Precio por unidad $7000</p>
                 </article>
             </section>
@@ -120,28 +137,30 @@
         <div>
             <div class="contenedor-datoslocal">
                 <h3>Datos del local</h3>
-                    <ul>
-                        <li>Telefono: (939) 555-0113</li>
-                        <li>Direccion: Avenida Siempreviva 742</li>
-                        <li>Horario de atencion: Lun a Sab de 10AM a 24PM</li>
-                        <li>Pedidos solo disponobles para takeaway</li>
-                    </ul>
+                <ul>
+                    <li>Telefono: (939) 555-0113</li>
+                    <li>Direccion: Avenida Siempreviva 742</li>
+                    <li>Horario de atencion: Lun a Sab de 10AM a 24PM</li>
+                    <li>Pedidos solo disponobles para takeaway</li>
+                </ul>
             </div>
             <div class="contenedor-redessociales">
                 <h3>Redes Sociales</h3>
-                    <ul>
-                        <li><a href="www.facebook.com" target="_blank">Faceboock</a></li>
-                        <li><a href="www.instagram.com" target="_blank">Instagram</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="www.facebook.com" target="_blank">Faceboock</a></li>
+                    <li><a href="www.instagram.com" target="_blank">Instagram</a></li>
+                </ul>
             </div>
             <div class="copyright">
                 <span>Copyright 2026</span>
-                <span class="separador">  -  </span> 
+                <span class="separador"> - </span>
                 <span>Santiago Ohaco Maldonado</span>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

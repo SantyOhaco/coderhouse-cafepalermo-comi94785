@@ -1,13 +1,28 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
+
+@mixin responder-a($pantalla) {
+  @if $pantalla == tablet {
+    @media (min-width: 768px) { @content; }
+  }
+  @if $pantalla == desktop {
+    @media (min-width: 1024px) { @content; }
+  }
+}
+
 main {
     @include caja(flex-start, center, column);
     gap: 30px;
     padding: 30px;
     width: 100%;
 
-    @media (min-width: 1024px) {
+    @include responder-a(tablet) {
+        gap: 35px;
+        padding: 35px;
+    }
+
+    @include responder-a(desktop) {
         &:has(.mapa) {
             display: grid;
             grid-template-rows: auto auto auto;

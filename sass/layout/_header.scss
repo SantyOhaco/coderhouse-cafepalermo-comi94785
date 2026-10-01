@@ -2,34 +2,68 @@
 @use "../utilities/mixins" as *;
 
 header {
-    background-color: $color-bg-sitio;
-    padding: 20px 30px;
-    border-bottom: 1px solid $color-borde-divisor;
-    width: 100%;
-    gap: 15px;
-    @include caja(center, center, column); 
+  background-color: $color-bg-sitio;
+  padding: 20px 30px;
+  border-bottom: 1px solid $color-borde-divisor;
+  width: 100%;
+  gap: 15px;
+  @include caja(center, center, column);
 
-    @media (min-width: 1024px) {
-        padding: 20px 40px;
-        @include caja(space-between, center, row); 
-    }
+  @media (min-width: 1024px) {
+    padding: 20px 40px;
+    @include caja(space-between, center, row);
+  }
 }
 
 .tituloheader {
-    @include caja(center, center, column);
-    width: 100%;
-    text-align: center;
+  @include caja(center, center, column);
+  width: 100%;
+  text-align: center;
 
-    h1 {
-        border-radius: 12px;
-        padding: 6px 15px;
-        display: inline-block;
+  h1 {
+    border-radius: 12px;
+    padding: 6px 15px;
+    display: inline-block;
 
-        &::before {
-            content: "☕️";
-            font-size: 50px;
-            text-shadow: 8px 8px 8px rgb(73, 61, 61);
-            display: inline-block;
-        }
+    &::before {
+      content: "☕️";
+      font-size: 50px;
+      text-shadow: 8px 8px 8px rgb(73, 61, 61);
+      display: inline-block;
     }
+  }
+}
+
+
+@mixin configuracion-barra($alto, $fondo-base) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $alto;
+  background-color: $fondo-base;
+  z-index: 9999;
+}
+
+
+.progress-bar-container {
+  @include configuracion-barra(6px, rgba(56, 34, 15, 0.1));
+
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, $color-marron-oscuro, $color-link-activo);
+    animation: avance-scroll auto linear;
+    animation-timeline: scroll();
+  }
+}
+
+@keyframes avance-scroll {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
