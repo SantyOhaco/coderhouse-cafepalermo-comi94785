@@ -75,6 +75,10 @@
         grid-area: formulario;
     }
 
+    @include responder-a(tablet) {
+        width: 100%;
+    }
+
     h3 {
         width: 100%;
         text-align: center;
@@ -98,10 +102,15 @@
         width: 100%;
     }
 
-    form>div {
+
+    form > div {
         @include caja(flex-start, normal, column);
         gap: 10px;
         width: 100%;
+
+        @include responder-a(tablet) {
+            width: 100% !important; 
+        }
     }
 
     fieldset {
